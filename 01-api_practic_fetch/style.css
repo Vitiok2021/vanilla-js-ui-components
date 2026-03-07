@@ -1,0 +1,18 @@
+#posts {
+  padding: 0;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+#posts li {
+  background: #f8f8f8;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+  list-style: none;
+}
+
+#posts li:hover {
+  background: #e0e0e0;
+}
