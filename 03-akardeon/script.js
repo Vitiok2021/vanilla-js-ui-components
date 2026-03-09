@@ -7,6 +7,11 @@ function showAccordion(e) {
   const currentText = currentItem.querySelector('.akardeon__text')
 
   if (currentText) {
-    currentText.classList.toggle('open')
+    const isOpen = currentText.classList.contains('open')
+    console.log(isOpen)
+    document.querySelectorAll('.akardeon__text').forEach((text) => text.classList.remove('open'))
+    if (!isOpen) {
+      currentText.classList.add('open')
+    }
   }
 }
